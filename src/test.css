@@ -1,0 +1,25 @@
+
+.service {
+    text-align: center;
+    background-color: var(--quaternary-color);
+}
+
+.service h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+    background-color: var(--quaternary-color);
+}
+
+.card__container {
+    display: flex;
+    gap: 2rem;
+}
