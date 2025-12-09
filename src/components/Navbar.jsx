@@ -1,28 +1,38 @@
-import logo from "../assets/logo.png";
-import "./navbar.css";
+import { Link } from "react-router-dom";
+import "./components.css";
+import { useState } from "react";
 
-const Navbar = ()=>{
-    return(
-       <header className="header">
-        <img className="header__logo" src={logo} alt="company logo" />
-        <nav className="header__navigation">
-            <div className="navigation__barmenu">
-                <dvi className="bar"></dvi>
-                <dvi className="bar"></dvi>
-                <dvi className="bar"></dvi>
-            </div>
-             <ul className="navigation__links">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Events</a></li>
-            </ul>
-            <button className="navigation__btn"> contact us</button>
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-        </nav>
-       </header>
-    );
+  function openMenu() {
+    setIsOpen(prev => !prev);
+  }
 
-}
+  return (
+    <header className="header">
+      <img className="header__logo" src="images/logo.jpg" alt="company logo" />
+
+      <div className="header__barmenu" onClick={openMenu}>
+        <div className="bar one"></div>
+        <div className="bar two"></div>
+        <div className="bar three"></div>
+      </div>
+
+      <div className={`header__navigation ${isOpen ? "open" : ""}`}>
+        <ul className="navigation__links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/events">Events</Link></li>
+        </ul>
+
+        <Link className="navigation__anchor" to="/contact">
+          Contact Us
+        </Link>
+      </div>
+    </header>
+  );
+};
 
 export default Navbar;

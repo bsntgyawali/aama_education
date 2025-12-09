@@ -1,65 +1,65 @@
-import logo from "../assets/logo.jpg";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import linkedIn from "../assets/linkedIn.svg";
 import location from "../assets/location.svg";
 import phone from "../assets/phone.svg";
 import mail from "../assets/mail.svg";
-import facebook from "../assets/facebook.svg";
-import insta from "../assets/instagram.svg";
-import linkedIn from "../assets/linkedIn.svg";
-import "./footer.css";
+import "./components.css";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__content">
-                <div>
-                    <h4>Subscribe</h4>
-                    <p>Join our community to receive updates</p>
-                    <form className="subscribe__form">
-                        <input type="email" placeholder="Enter your email..." />
-                        <button> Subscribe</button>
+                <div className="subscribe-section">
+                    <h3>Subscribe</h3>
+                      <p>Join our community to receive updates</p>
+                    <form className="subscribe-form">
+                        <input type="text" />
+                        <input type="submit" />
                     </form>
-                    <p>By subscribing, you agree to our Privacy Policy.</p>
+                     <p>By subscribing, you agree to our Privacy Policy.</p>
                 </div>
-                <div>
-                    <h4>Contact Info</h4>
+                <div className="contact-section">
+                    <h3>Contact Info</h3>
                     <ul>
-                        <li><img className="contact-icon" src={location} alt="pin icon" />Butwal-8, Milanchowk</li>
-                        <li><img className="contact-icon" src={phone} alt="phone icon" />9860559643</li>
-                        <li><img className="contact-icon" src={mail} alt="mail icon" />info@aamaeducation.edu.np</li>
+                        <li><img className="contact-icon" src={location} alt="pin-icon" />Butwal-8, Milanchowk</li>
+                        <li><img className="contact-icon" src={phone} alt="phone icon" /> 9860559643, 9762899976</li>
+                        <li><img className="contact-icon" src={mail} alt="mail icon"/>info@aamaeducation.edu.np</li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Quick Links</h4>
+                <div className="navigate-section">
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Events</a></li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Events</li>
                     </ul>
                 </div>
-                <div>
-                    <img className="footer__logo" src={logo} alt="company logo" />
+                <div className="media-section">
+                    <img className="footer__logo" src="/images/logo.jpg" alt="company's logo" />
                     <p>
-                        The institution that has been working rigourously<br/>
+                        The institution that has been working rigourously
                         to help students achieve thier international dreaam.
                     </p>
                     <ul>
-                        <li><a><img className="media-icon" src={facebook} alt="facebook logo" /></a></li>
-                        <li><a><img className="media-icon" src={insta} alt="insta logo" /></a></li>
-                        <li><a><img className="media-icon" src={linkedIn} alt="linkedIn logo" /></a></li>
+                        <li><a><img className="media-icon" src={facebook} alt="facebook icon" /></a></li>
+                        <li><a><img className="media-icon" src={instagram} alt="instagram icon"/></a></li>
+                        <li><a><img className="media-icon" src={linkedIn} alt="linkedIn icon" /></a></li>
                     </ul>
                 </div>
             </div>
-            <hr />
             <div className="footer__policies">
                 <ul>
                     <li><a>Privacy Policy</a></li>
                     <li><a>Terms of Service</a></li>
                     <li><a>Cookie Policy</a></li>
                 </ul>
-                <p> &copy; 2025 AES. All rights reserved</p>
+                <span>
+                    &copy; 2025 AES. All rights reserved
+                </span>
             </div>
-        </footer >
+        </footer>
     );
 }
 
