@@ -1,29 +1,30 @@
-const Form = ()=>{
+import { useState } from "react";
+
+const Form = ({title, action}) =>{
     return(
-         <form className="contact-form">
-                <h2>Get In Touch With Us</h2>
-                <div className="form-section">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Enter your name" name="name" />
-                </div>
-                <div className="form-section">
-                    <label for="address">Address</label>
-                    <input type="text" placeholder="Enter your address" name="address" />
-                </div>
-                <div className="form-section">
-                    <label for="phone">Phone</label>
-                    <input type="text" placeholder="98XXXXXXXX" name="phone" />
-                </div>
-                <div className="form-section">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="example@testmail.com" name="email" />
-                </div>
-                <div className="form-section">
-                    <label for="name">Message</label>
-                    <textarea placeholder="Write your message..." />
-                </div>
-                <input type="submit" value="Submit" />
-            </form>
+        <form className="contact-form">
+             <h2>{title}</h2>
+            <div className="form__section">
+                <label>Name*</label>
+                <input type="text" placeholder="Enter your name..." />
+                <p className="warning">Your cannot leave required field empty</p>
+            </div>
+             <div className="form__section">
+                <label>Phone*</label>
+                <input type="text" placeholder="98XXXXXXXX" />
+                <p className="warning">Your cannot leave required field empty</p>
+            </div>
+             <div className="form__section">
+                <label>Email*</label>
+                <input type="text" placeholder="example@text.com" />
+                <p className="warning">Your cannot leave required field empty</p>
+            </div>
+             <div className="form__section">
+                <label>Message</label>
+                <textarea placeholder="Write your message..."/>
+            </div>
+            <input type="submit" value={action}/>
+        </form>
     );
 }
 

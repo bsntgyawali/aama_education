@@ -1,48 +1,77 @@
-import { Link } from "react-router-dom";
-import features from "../data/features";
-import FeatureCard from "../components/FeatureCard";
-import "./pages.css";
+import check from "../assets/check.svg";
+import Hero from "../components/Hero";
+import InfoCard from "../components/InfoCard";
+import countries from "../data/infoData";
+import CourseCard from "../components/CourseCard";
+import classes from "../data/classData";
+import services from "../data/servicesData";
+import "./styles.css";
+import ServiceCard from "../components/ServiceCard";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="hero-section">
-        <div className="hero__content-wrapper">
-          <p>our objective</p>
-          <h1>Helping Student ShapeTheir Future</h1>
-          <p>Join thousands of students who chose <span className="hero__highlight">Aama Education Services </span>
-            to guide them and fulfill their international dream.
-          </p>
-          <Link>Get Started</Link>
+     <Hero />
+      <div className="feature-section">
+        <h2>Why Choose Us</h2>
+        <div className="list-wrapper">
+             <ul>
+          <li><img src={check} />Certified & Experienced Counsellors</li>
+          <li><img src={check} />Transparent Documentation</li>
+        </ul>
+         <ul>
+          <li><img src={check} />1000+ Successful Students </li>
+          <li><img src={check} />Free Career Counselling</li>
+        </ul>
         </div>
       </div>
-      <div className="about-section">
-        <img src="/images/expert.png" />
-        <div className="about__content-wrapper">
-          <h2>We are we?</h2>
-          <p>
-            Aama Education Services is not just an institution,
-            it is a vision and an ambition to help Nepalese students
-            reach and succeed in the global market. To accomplish such an ambitious goal,
-            we at Aama Education Services have been working rigorously in this field for more than half a decade.
-          </p>
-          <Link to="/about">Learn More</Link>
-        </div>
-      </div>
-      <div className="features-section">
-        <h2 className="section-title">Why Choose AES?</h2>
+      <div className="destination-section" id="abroadStudy">
+        <h2>Abroad Study Destination</h2>
         <div className="card-wrapper">
-          {
-            features.map((feature) => (
-              <FeatureCard
-                key={feature.id}
-                title={feature.title}
-                subtitle={feature.subtitle}
-                properties={feature.properties}
-                action={feature.action}
+        {
+          countries.map((country)=>{
+            return (
+              <InfoCard 
+              key={country.id}
+              cname = {country.name}
+              imgSource = {country.source}
+              features={country.features}
               />
-            ))
-          }
+            );
+          })
+       }
+     </div>
+      </div>
+      <div className="preparation-section">
+       <h2>Test Preparation</h2>
+       <div className="classcard-wrapper">
+         {
+          classes.map((item)=>{
+            return (
+              <CourseCard 
+              key={item.id}
+              cname = {item.name}
+              source ={item.image}
+              action={item.action}
+              />
+            );
+          })
+       }
+       </div>
+      </div>
+      <div className="service-section" id="service">
+        <h2>Services</h2>
+        <div className="card-holder">
+        {
+          services.map((service)=>{
+            return(
+              <ServiceCard
+              sname={service.name}
+              source={service.image}
+              />
+            );
+          })
+        }
         </div>
       </div>
     </div>
