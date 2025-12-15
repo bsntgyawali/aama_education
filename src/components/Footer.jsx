@@ -15,9 +15,9 @@ const Footer =()=>{
                 <img src={logo} alt="company logo" />
                 <p>"Helping Student Shape Their Future"</p>
                 <ul>
-                    <li><img src={fb} alt="facebook icon" /></li>
-                    <li><img src={insta} alt="insta icon" /></li>
-                    <li><img src={tiktok} alt="insta icon" /></li>
+                    <li><a href="https://www.facebook.com/share/1ZQPbyJ57x/" target="_blank"><img src={fb} alt="facebook icon" /></a></li>
+                    <li><a href="https://www.instagram.com/aamaeducational" target="_blank" ><img src={insta} alt="insta icon" /></a></li>
+                    <li><a href="https://www.tiktok.com/@aama.educational1" target="_blank"><img src={tiktok} alt="insta icon" /></a></li>
                 </ul>
             </div>
             <div className="content__section-two">

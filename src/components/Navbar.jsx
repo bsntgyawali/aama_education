@@ -32,9 +32,9 @@ const Navbar = () =>{
       <header className="header">
         <div className="header__media-wrapper">
             <ul>
-                <li><img src={fb} alt="fb icon" /></li>
-                <li><img src={insta} alt="insta icon" /></li>
-                <li><img src={tiktok} alt="tiktok" /></li>
+                <li><a href="https://www.facebook.com/share/1ZQPbyJ57x/" target="_blank"><img src={fb} alt="fb icon" /></a></li>
+                <li><a href="https://www.instagram.com/aamaeducational" target="_blank"><img src={insta} alt="insta icon" /></a></li>
+                <li><a href="https://www.tiktok.com/@aama.educational1" target="_blank"><img src={tiktok} alt="tiktok" /></a></li>
             </ul>
         </div>
         <div className="navbar">

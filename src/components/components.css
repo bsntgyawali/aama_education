@@ -263,22 +263,24 @@
     transform: translateY(-3px) scale(1.05);
 }
 
+
+
 .service-card>div{
     display: flex;
+    gap: 1rem;
 }
 
 .service-card img{
-    width: 50%;
+    width: 30%;
     height: auto;
 }
 
-.service-card h3{
+.service-card h4{
     color: var(--text-color);
 }
 
 .service-card>a{
     font-size: 14px;
-    text-align: center;
 }
 .service-card>a:hover{
     color: var(--cta-color);
@@ -330,7 +332,7 @@
     gap: 1rem;
 }
 
-.content__section-one li>img{
+.content__section-one a>img{
     width: 24px;
     height: 24px;
 }
