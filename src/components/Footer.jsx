@@ -13,7 +13,7 @@ const Footer =()=>{
          <div className="footer__content-wrapper">
             <div className="content__section-one">
                 <img src={logo} alt="company logo" />
-                <p>"Helping Student Shape Their Future"</p>
+                <p>"Helping Students Shape Their Future"</p>
                 <ul>
                     <li><a href="https://www.facebook.com/share/1ZQPbyJ57x/" target="_blank"><img src={fb} alt="facebook icon" /></a></li>
                     <li><a href="https://www.instagram.com/aamaeducational" target="_blank" ><img src={insta} alt="insta icon" /></a></li>
@@ -24,7 +24,7 @@ const Footer =()=>{
                 <h4>Contact</h4>
                 <ul>
                 <li><img src={location} alt="pin icon"/>Butwal -8, Milanchowk</li>
-                <li><img src={phone} alt="phone icon" />9850669345</li>
+                <li><img src={phone} alt="phone icon" />9860559643/9762899976</li>
                 <li><img src={mail} alt="mail icon"/>info@aamaeducation.edu.np</li>
                 </ul>
             </div>
