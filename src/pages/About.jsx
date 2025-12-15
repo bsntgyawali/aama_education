@@ -8,11 +8,13 @@ const About =()=>{
             <div className="section__content-wrapper">
                 <h2>Who Are We?</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero magnam, suscipit aspernatur harum animi similique ratione ad ipsa nam dolorum. Iure deserunt accusamus nobis, sint eaque vero. Dolor, ratione adipisci.
-                    Quam officia, nesciunt sint consequatur cupiditate voluptas obcaecati alias optio repellat vel adipisci sunt pariatur eveniet, nihil tempore consectetur! Ducimus vitae facere et unde vero alias, esse sit voluptatum mollitia.
-                    Quos dolorem assumenda quaerat nesciunt eos in maxime? Placeat, dolorum voluptate! Ullam, numquam pariatur, doloribus, facilis quis maiores ipsum ut assumenda debitis hic consequuntur optio corrupti nostrum architecto possimus distinctio?
-                    Deserunt quidem amet culpa temporibus accusamus impedit deleniti? Odio asperiores, earum consequuntur, nesciunt amet eveniet dolorum alias accusamus debitis aliquid porro beatae dolore ipsum laborum voluptates optio blanditiis mollitia repellendus.
-                    Similique ipsam officiis eum ut ducimus voluptates! Maiores totam adipisci voluptatem, quisquam et inventore natus illo voluptatibus vel praesentium quae debitis distinctio, error aut sequi repellat quibusdam quos earum eius.
+                    Aama Educational Services is a professional education consultancy in Nepal offering expert guidance for study abroad, university admissions, visa processing, and test preparation. We help students make informed academic and career decisions through honest, personalized counseling.
+
+We specialize in overseas education for top destinations including Australia, USA, UK, Canada, and Japan, providing complete end-to-end support—from course and university selection to application and student visa guidance.
+
+Alongside study abroad services, we offer result-oriented IELTS and PTE preparation and Japanese language classes (N5/N4), led by experienced instructors using updated learning methods.
+
+At Aama Educational Services, we are committed to transparency, quality guidance, and student success. If you are searching for a reliable study abroad consultancy in Nepal, we are here to turn your educational goals into global opportunities.
                 </p>
             </div>
             </div>
