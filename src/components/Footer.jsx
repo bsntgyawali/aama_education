@@ -42,7 +42,7 @@ const Footer =()=>{
               <ul>
                 <li>Universities</li>
                 <li>Syllabus</li>
-                <li>New & Updates</li>
+                <li>News & Updates</li>
               </ul>
             </div>
          </div>
