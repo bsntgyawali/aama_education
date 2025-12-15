@@ -1,22 +1,22 @@
 const services = [
     {id:1,
         name: "Career Counselling",
-        image: "../assets/career.png"
+        image: "../assets/text.png"
 
     },
       {id:2,
         name: "University Selection",
-        image: "../assets/university.png"
+        image: "../assets/text.png"
 
     },
       {id:3,
         name: "SOP/LOR Writing",
-        image: "../assets/sop.png"
+        image: "../assets/text.png"
 
     },
       {id:4,
         name: "Language & Test Classes",
-        image: "../assets/test.png"
+        image: "../assets/text.png"
 
     }
 ];
