@@ -235,6 +235,7 @@
 .counselling__content-wrapper{
     width: 100%;
 }
+
 /* Service Page */
 .services{
     max-width: 100%;
@@ -246,5 +247,14 @@
     padding: 0.5rem;
 }
 
+}
 
+/* Carousel Section */
+
+.previous{
+    left: 1rem;
+}
+
+.next{
+    right: 1rem;
 }
