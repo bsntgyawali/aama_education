@@ -512,3 +512,111 @@ color: var(--cta-color);
     width: 100%;
     height: 100%;
 }
+
+/* Employee Card */
+
+.ecard{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.ecard:hover{
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ecard__image-wrapper{
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+}
+
+.ecard__image-wrapper > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.15), 
+        inset 0 -4px 6px rgba(0, 0, 0, 0.08); 
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.ecard__info-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.ecard__info-wrapper>span:first-child{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+.ecard__info-wrapper>span:last-child{
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+/* Carousel */
+
+.carousel{
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__btn{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.8;
+    border-radius: 8px;
+    z-index: 3;
+}
+
+.carousel__btn:hover{
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.previous{
+    left: 2rem;
+}
+
+.next{
+    right: 2rem;
+}
+.carousel__slider{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    transition:0.5s ease;
+}
+
