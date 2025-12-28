@@ -1,4 +1,4 @@
-//import menPic from "../assets/person2.jpg";
+import menPic from "../assets/person2.jpg";
 import womenPic from "../assets/person1.jpg";
 const employees = [
     {
@@ -48,4 +48,5 @@ const employees = [
 
 
 export default employees;
+
 
