@@ -1,9 +1,9 @@
-import menPic from "../assets/person2.jpg";
+//import menPic from "../assets/person2.jpg";
 import womenPic from "../assets/person1.jpg";
 const employees = [
     {
     name: "Employee Name",
-    image: person2
+    image: person2.jpg
   }
     {
         id:1,
@@ -48,3 +48,4 @@ const employees = [
 
 
 export default employees;
+
