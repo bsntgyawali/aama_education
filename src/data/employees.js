@@ -2,6 +2,10 @@ import menPic from "../assets/person2.jpg";
 import womenPic from "../assets/person1.jpg";
 const employees = [
     {
+    name: "Employee Name",
+    image: person2
+  }
+    {
         id:1,
         imgURL: menPic,
         name:"Basanata Gyawali",
@@ -41,5 +45,6 @@ const employees = [
         designation: "JLPT Instructor"
     }
 ];
+
 
 export default employees;
